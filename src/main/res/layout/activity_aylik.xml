@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nemli_tarihler"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#264653"
+        android:layout_marginStart="30dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tarih_e1"
+                    android:textSize="20sp"
+                    android:textColor="#264653"/>
+                <TextView
+                    android:id="@+id/tarih1text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"/>
+
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tarih_e2"
+                    android:textSize="20sp"
+                    android:textColor="#264653"/>
+                <TextView
+                    android:id="@+id/tarih2text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tarih_e3"
+                    android:textSize="20sp"
+                    android:textColor="#264653"/>
+                <TextView
+                    android:id="@+id/tarih3text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/ekleB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ekleB"
+        android:layout_marginLeft="150dp"
+        android:onClick="showEditT" />
+
+</LinearLayout>
+

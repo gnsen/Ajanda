@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="150dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="15dp">
+        <TableRow>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/ptesi"
+                android:textSize="20sp"
+                />
+            <EditText
+                android:id="@+id/ptsidersk"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp">
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/sal"
+                android:textSize="20sp"
+                />
+            <EditText
+                android:id="@+id/sdersk"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp">
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/ar_amba"
+                android:textSize="20sp"
+                />
+            <EditText
+                android:id="@+id/cdersk"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp">
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/per_embe"
+                android:textSize="20sp"
+                />
+            <EditText
+                android:id="@+id/pdersk"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp">
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/cum"
+                android:textSize="20sp"
+                />
+            <EditText
+                android:id="@+id/cudersk"
+                android:layout_height="wrap_content"
+                android:layout_width="220dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/dersbuton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kaydetders"
+        android:layout_marginTop="-100dp"
+        android:layout_marginLeft="140dp"
+        android:onClick="saveData2"/>
+
+</LinearLayout>
